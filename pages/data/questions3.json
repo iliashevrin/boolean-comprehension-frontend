@@ -1,0 +1,170 @@
+[
+  {
+    "formula": "((A <-> (B & C & D & !E)) | (E & !F))",
+    "assignment": {
+      "A": true,
+      "B": true,
+      "C": false,
+      "F": false
+    },
+    "isOriginal": true,
+    "category": "REDUCE_OPERATOR_NESTING_INCREASE_OPERATOR_COUNT_TRADEOFF_DNF"
+  },
+  {
+    "formula": "(!A -> ((B & !C) <-> D))",
+    "assignment": {
+      "B": true
+    },
+    "isOriginal": true,
+    "category": "REDUCE_NEGATION_COUNT"
+  },
+  {
+    "formula": "((A -> !B) & (C -> !D))",
+    "assignment": {
+      "A": false,
+      "C": false
+    },
+    "isOriginal": true,
+    "result": true,
+    "category": "REDUCE_NEGATION_COUNT_INCREASE_NEGATION_LEVEL_TRADEOFF"
+  },
+  {
+    "formula": "((C & D) -> (A | B | E))",
+    "assignment": {
+      "B": true,
+      "C": false,
+      "D": true,
+      "E": false
+    },
+    "isOriginal": false,
+    "result": true,
+    "category": "ELIMINATE_NEGATION"
+  },
+  {
+    "formula": "((!A & !B & C & D) -> E)",
+    "assignment": {
+      "B": true,
+      "C": false,
+      "D": true,
+      "E": false
+    },
+    "isOriginal": true,
+    "result": true,
+    "category": "ELIMINATE_NEGATION"
+  },
+  {
+    "formula": "(A | ((B & !C) <-> D))",
+    "assignment": {
+      "B": true
+    },
+    "isOriginal": false,
+    "category": "REDUCE_NEGATION_COUNT"
+  },
+  {
+    "formula": "((A & B & C) -> !(D | E))",
+    "assignment": {
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    "isOriginal": true,
+    "result": true,
+    "category": "REDUCE_NEGATION_LEVEL"
+  },
+  {
+    "formula": "((A <-> (B & !C)) | (C & !D))",
+    "assignment": {
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "isOriginal": true,
+    "category": "REDUCE_OPERATOR_NESTING_INCREASE_OPERATOR_COUNT_TRADEOFF_CNF"
+  },
+  {
+    "formula": "((!A & !B) | !C | D)",
+    "assignment": {
+      "A": true,
+      "C": false
+    },
+    "isOriginal": false,
+    "result": true,
+    "category": "REDUCE_OPERATOR_NESTING"
+  },
+  {
+    "formula": "(((A | B) & C) -> D)",
+    "assignment": {
+      "A": true,
+      "C": false
+    },
+    "isOriginal": true,
+    "result": true,
+    "category": "REDUCE_OPERATOR_NESTING"
+  },
+  {
+    "formula": "((A & B & C) -> (!D & !E))",
+    "assignment": {
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    "isOriginal": false,
+    "result": true,
+    "category": "REDUCE_NEGATION_LEVEL"
+  },
+  {
+    "formula": "!((A & B) | (C & D))",
+    "assignment": {
+      "A": false,
+      "C": false
+    },
+    "isOriginal": false,
+    "result": true,
+    "category": "REDUCE_NEGATION_COUNT_INCREASE_NEGATION_LEVEL_TRADEOFF"
+  },
+  {
+    "formula": "(B & (A | C | D))",
+    "assignment": {
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    "isOriginal": false,
+    "result": false,
+    "category": "REDUCE_OPERATOR_COUNT"
+  },
+  {
+    "formula": "((A & B) | (C & B) | (D & B))",
+    "assignment": {
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    "isOriginal": true,
+    "result": false,
+    "category": "REDUCE_OPERATOR_COUNT"
+  },
+  {
+    "formula": "((A & B & !C) | (!A & !B) | (!A & C) | (C & !D))",
+    "assignment": {
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "isOriginal": false,
+    "category": "REDUCE_OPERATOR_NESTING_INCREASE_OPERATOR_COUNT_TRADEOFF_CNF"
+  },
+  {
+    "formula": "((A | !B | !C | !D | E) & (!A | B | E) & (!A | C | E) & (!A | D | E) & (!A | !E | !F))",
+    "assignment": {
+      "A": true,
+      "B": true,
+      "C": false,
+      "F": false
+    },
+    "isOriginal": false,
+    "category": "REDUCE_OPERATOR_NESTING_INCREASE_OPERATOR_COUNT_TRADEOFF_DNF"
+  }
+]
